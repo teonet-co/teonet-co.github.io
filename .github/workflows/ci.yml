@@ -17,6 +17,7 @@ jobs:
       - run: mv docs/ ../.docs
       - run: git config --global user.email "repo@teonet-co.org"
       - run: git config --global user.name  "repository"
+      - run: git fetch
       - run: git checkout gh-pages
       - run: rm -r en_us ru_rf
       - run: cp -r .././docs/en_us ./en_us
