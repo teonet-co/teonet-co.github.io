@@ -20,8 +20,8 @@ jobs:
       - run: git fetch
       - run: git checkout gh-pages
       - run: rm -r en_us ru_rf
-      - run: cp -r .././docs/en_us ./en_us
-      - run: cp -r .././docs/ru_rf ./ru_rf
+      - run: cp -r ../.docs/en_us ./en_us
+      - run: cp -r ../.docs/ru_rf ./ru_rf
       - run: git add .
       - run: git commit -m "Project documentation updated" -m "[skip ci]"
       - run: git push origin gh-pages
